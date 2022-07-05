@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+}
+body {
+  padding: 0 100px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  display: flex;
+  border-bottom: 1px solid white;
+  height: 60px;
+  align-items: center;
+  color: white;
+  position: sticky;
+  top: 0px;
+  background-color: rgb(0, 0, 0, 0.9);
+  z-index: 2;
+}
+header li {
+  height: 60px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+}
+header li:hover {
+  background-color: rgb(206, 174, 85);
+  color: black;
+}
+#current {
+  border-bottom: 1px solid rgb(206, 174, 85);
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+#logo {
+  flex: 1;
+  text-align: center;
+  font-size: 30px;
+}
+#logo:hover {
+  font-size: 35px;
+  font-weight: bold;
+}
+header > nav {
+  flex: 5;
+}
+#login-register {
+  flex: 1;
+  text-align: center;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#login-register a {
+  color:rgb(206, 174, 85);
+}
+header > nav > ul {
+  display: flex;
+  justify-content: center;
+}
+article .book-cover {
+  width: 100px;
+  margin: 30px;
+}
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+article p {
+  width: 1000px;
+}
+#dropcap {
+  float: left;
+  width: 0.7em;
+  font-size: 400%;
+  line-height: 80%;
+}
+.banner {
+  padding: 20px;
+  border-radius: 30px;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(245, 215, 132, 0.582),
+    rgba(121, 98, 36, 0.342)
+  );
+  height: 400px;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  margin: 100px 0;
+}
+.banner h1 {
+  font-weight: normal;
+  font-size: 40px;
+}
+section {
+  margin: 100px 0;
+}
+section > h1 {
+  font-size: 50px;
+  font-weight: normal;
+  margin-bottom: 50px;
+  text-align: center;
+}
+article {
+  margin: 100px 0;
+}
+article > h1 {
+  font-size: 50px;
+  font-weight: normal;
+  text-align: center;
+}
+#cover-container {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  z-index: 1;
+  height: 600px;
+  margin: 50px 0;
+}
+.imagewrap {
+  perspective: 300px;
+}
+.imagewrap img {
+  box-shadow: -5px 5px 5px black;
+  transform: rotatey(10deg);
+}
+.chart ol {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.chart-item {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+  border-top: 1px solid rgb(206, 174, 85);
+}
+.chart-item .book-cover {
+  width: 200px;
+}
+.chart-item .description p {
+  margin: 5px 0;
+}
+.chart-item .description .title {
+  font-size: 30px;
+}
+.chart-item .description .writer {
+  color: rgb(206, 174, 85);
+  font-size: 25px;
+}
+.chart-item .description .description-genres {
+  color: rgb(206, 174, 85);
+}
+.chart-item .rating {
+  margin-left: auto;
+  margin-right: 10%;
+}
+.genre-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+}
+.genre-item {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+}
+.list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.list-container .list-item {
+  border-left: 1px solid rgb(206, 174, 85);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.list-container .list-item .list-title {
+  font-size: 40px;
+}
+.list-container .list-item .list-maker {
+  font-size: 25px;
+  color: rgb(206, 174, 85);
+}
+.list-container .list-item .book-covers {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+}
+.list-container .list-item .book-covers .book-cover {
+  width: 100px;
+}
+footer {
+  height: 200px;
+  border-top: 1px solid white;
+  color: white;
+  background-color: black;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
